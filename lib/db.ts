@@ -1,7 +1,7 @@
 import Database from 'better-sqlite3';
 import path from 'path';
 
-const dbFilename = process.env.DATABASE_URL || 'ryb.db';
+const dbFilename = process.env.DATABASE_PATH || 'ryb.db';
 const dbPath = path.join(process.cwd(), dbFilename);
 
 const db = new Database(dbPath);
