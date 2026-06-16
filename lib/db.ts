@@ -1,7 +1,9 @@
 import Database from 'better-sqlite3';
 import path from 'path';
 
-const dbPath = path.join(process.cwd(), 'ryb.db');
+const dbFilename = process.env.DATABASE_URL || 'ryb.db';
+const dbPath = path.join(process.cwd(), dbFilename);
+
 const db = new Database(dbPath);
 
 // UNIQUE sorgt dafür, dass ein Kapitel nicht doppelt als gelesen markiert wird
