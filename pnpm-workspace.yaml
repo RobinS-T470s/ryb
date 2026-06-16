@@ -1,0 +1,8 @@
+allowBuilds:
+  '@ampproject/toolbox-optimizer': true
+  better-sqlite3: true
+  es5-ext: true
+  sharp: true
+  unrs-resolver: true
+minimumReleaseAgeExclude:
+  - better-sqlite3@12.11.1
